@@ -1,0 +1,6 @@
+Zwykłe odwracanie tekstu.
+2 skrypty są w bashu:
+1) przez wbudowane polecenie rev
+2) bez polecenia gotowego, w pętli
+
+

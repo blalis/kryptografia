@@ -1,0 +1,11 @@
+2 skrypty:
+1) cezar.bash
+To klasyczna implementacja szyfru cezara - przeskok o 3 litery.
+Tekst podajemy jako argument np. ./cezar.bash 'Test szyfru cezara'.
+Jeżeli nie zamkniemy tekstu w cudzysłowiach to tylko pierwszy wyraz zostanie poddany tłumaczeniu.
+Jeżeli chcemy wykrozystać plik: ./cezar.bash "$(cat [nazwa pliku])" np. ./cezar.bash "$(cat message)"
+
+2) cezarX.bash
+Możemy podać jako drugi argument przeskok. Minimum - i maksimum: 26 wyświetlą wprowadzony tekst.
+Domyślna wartość: 3. ./cezarX.bash test przesunie napis test o 3 litery. ./cezarX.bash test 13
+przesunie wyraz o 13 liter (algorytm ROT13) 
