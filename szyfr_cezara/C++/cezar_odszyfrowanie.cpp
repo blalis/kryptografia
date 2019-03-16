@@ -1,6 +1,6 @@
 #include <iostream>
 #include <stdio.h>
-#define tab_size 20
+#define tab_size 50
 int main()
 {
   std::string chartab="abcdefghijklmnopqrstuvwxyz";
@@ -10,6 +10,10 @@ int main()
   bool casetest;
   int chartest;
   int count=0;
+  //transp POWINNO być mniejsze niz ilsoc liter w alfabecie i minimum 1
+  // Szyfr cezara 3
+  int transp;
+  std::cout<<"Podaj tekst do odszyfrowania"<<std::endl;
   for(int i=0;i<tab_size;i++)
   {
     std::cin>>tab[i];
@@ -17,6 +21,14 @@ int main()
     if(getchar()==10)
       break;
   }
+  std::cout<<"Podaj przeskok (liczbę liter,klasycznie były 3)"<<std::endl;
+  std::cin>>transp;
+  if(transp<0 || transp>chartablen)
+  {
+    transp=3;
+    std::cout<<"Błędna wartość, wybrano wartosć domyślną!"<<std::endl;
+  }
+  std::cout<<"Przeskok: "<<transp<<std::endl;
   for(int i=0;i<count;i++)
   {
     for(int k=0;k<tab[i].length();k++)
@@ -33,12 +45,12 @@ int main()
         if(kodchar==chartab[j])
         {
           chartest=0;
-          if(j<3)
-          {
-            kodchar=chartab[chartablen+j-3];
-          }
-          else
-            kodchar=chartab[j-3];
+            if(j<transp)
+            {
+              kodchar=chartab[chartablen+j-transp];
+            }
+            else
+              kodchar=chartab[j-transp];
           if(casetest==1)
           {
             kodchar=toupper(kodchar);

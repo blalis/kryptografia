@@ -1,6 +1,6 @@
 #include <iostream>
 #include <stdio.h>
-#define tab_size 20
+#define tab_size 50
 int main()
 {
   std::string chartab="abcdefghijklmnopqrstuvwxyz";

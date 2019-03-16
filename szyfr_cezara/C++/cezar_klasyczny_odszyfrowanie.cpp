@@ -1,6 +1,6 @@
 #include <iostream>
 #include <stdio.h>
-#define tab_size 20
+#define tab_size 50
 int main()
 {
   std::string chartab="abcdefghijklmnopqrstuvwxyz";
@@ -10,6 +10,7 @@ int main()
   bool casetest;
   int chartest;
   int count=0;
+  std::cout<<"Podaj tekst do odszyfrowania"<<std::endl;
   for(int i=0;i<tab_size;i++)
   {
     std::cin>>tab[i];

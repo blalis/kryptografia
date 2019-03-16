@@ -1,0 +1,39 @@
+.c/cpp/bash
+oznacza różne języki programowania/skryptowania znajdujące się w osobnych podfolderach:
+.c      język C
+.cpp    język C++
+.bash   skrypt linux-owy powłoki bash
+
+
+1) cezar_szyfr.c/cpp/bash
+Wypisuje alfabet i szyfr (alfabet po wybranym przeskoku)
+np. dla przeskoku=6:
+abcdefghijklmnopqrstuvwxyz
+ghijklmnopqrstuvwxyzabcdef
+LUB dla przeskoku 3 (klasycznie):
+abcdefghijklmnopqrstuvwxyz
+defghijklmnopqrstuvwxyzabc
+
+2) cezar.c/cpp/bash
+szyfrowanie i odszyfrowanie z wyborem przeskoku w jednym programie
+3) cezar_odszyfrowanie.c/cpp/bash
+samo odszyfrowanie z wyborem przeskoku
+
+4) cezar_szyfrowanie.c/cpp/bash
+samo szyfrowanie z wyborem przeskoku
+
+5) cezar_klasyczny.c/cpp/bash
+szyfrowanie i odszyfrowanie w wariancie klasycznym (stały przeskok: 3) w jednym programie
+
+6) cezar_klasyczny_odszyfrowanie.c/cpp/bash
+samo szyfrowanie w wariancie klasycznym (stały przeskok: 3)
+
+7) cezar_klasyczny_szyfrowanie.c/cpp/bash
+samo szyfrowanie w wariancie klasycznym (stały przeskok: 3)
+
+8) cezar_test.c/cpp/bash
+pokaz szyfru cezara
+
+9) ROT13.c/cpp/bash
+Szyfr ROT13 czyli cezar z przeskokiem 13 (alfabet bez polskich liter
+ma 26 cyfr więc szyfrowanie i deszyfrowanie da taki sam rezultat)

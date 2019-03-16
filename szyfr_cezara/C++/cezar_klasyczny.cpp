@@ -13,14 +13,14 @@ int main()
   int choice;
   std::cout<<"Jezeli chesz zaszyfrowac wcisnij 1, jezeli chcesz odszyfrowac podaj 2"<<std::endl;
   std::cout<<"Jezeli chesz wyjsc wcisnij 0"<<std::endl;
-  while(choice!=1 && choice!=2)
+  do
   {
     std::cin>>choice;
     if(choice!=1 && choice !=2 && choice !=0)
       std::cout<<"Podales niepoprawna wartosc. Jezeli chcesz wyjsc wcisnij 0"<<std::endl;
     if(choice==0)
      return 0;
-  }
+  }while(choice!=1 && choice!=2);
   std::cout<<std::endl<<"Teraz podaj tekst"<<std::endl;
   for(int i=0;i<tab_size;i++)
   {
