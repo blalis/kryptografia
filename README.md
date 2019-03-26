@@ -9,4 +9,4 @@ repozytorium). Być może kiedyś dojdą współczesne algorytmy szyfrowania.
 cryptography programs written in C/C++/bash
 
 
-![alt text](https://github.com/blalis/kryptografia/szyfr_transpozycja.jpg)
+![alt text](https://github.com/blalis/kryptografia/blob/master/szyfr_transpozycja.jpg)
